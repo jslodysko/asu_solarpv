@@ -1,0 +1,129 @@
+html body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: rgb(46, 46, 46);
+}
+
+div.header {
+    width: 85vw;
+    margin-left: 15vw;
+    height: 18vh;
+    background-image: url('banner2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.header_logo {
+    width: 15vw;
+    margin-left:-15vw;
+    height: 100%;
+    float: left;
+}
+div.header_right {
+    width: 30%;
+    height: 100%;
+    float: right;
+}
+
+div.nav_container {
+    display: flex;     
+    width: 100%;
+    height: 4%;
+}
+
+div.nav_button {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 1.2em;
+    min-width: 16%;
+    background-color: rgb(67, 147, 167);
+    border-radius: 2px;
+}
+
+div.nav_button_extra {
+    width: 27%;
+}
+
+div.dropdown-content {
+    visibility: none;
+    opacity: 0;
+    position: absolute;
+    background-color: rgb(67, 147, 167);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: -1;
+    transition: opacity 0.4s;
+}
+
+div.nav_button:hover div.dropdown-content {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+div.content_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 67%;
+    top: 0;
+}
+
+div.content_edge {
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgb(36, 36, 36);
+}
+div.content_center {
+    width: 70%;
+    height: calc(100% - 5px);
+    margin: auto;
+    font-size: larger;
+    line-height: 1.65;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+div.ad_space {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    color:white;
+    font-size: 5em;
+    text-align: center;
+}
+
+div.footer {
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+}
+
+div.footer_bottom_links {
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(221, 221, 221)
+}
